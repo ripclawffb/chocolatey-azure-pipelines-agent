@@ -12,7 +12,7 @@ branches:
 #  verbosity: minimal
 
 environment:
-  package_name: azure-pipeline-agent
+  package_name: azure-pipelines-agent
 
 install:
   - ps: 'Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version'
