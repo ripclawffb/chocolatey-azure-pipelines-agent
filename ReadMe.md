@@ -1,5 +1,7 @@
 ﻿# Azure Pipelines Agent Chocolatey Package
 
+[![Build status](https://ci.appveyor.com/api/projects/status/212o030mcfk3c3lj/branch/master?svg=true)](https://ci.appveyor.com/project/ripclawffb/chocolatey-azure-pipelines-agent/branch/master)
+
 To build and deploy Windows, Azure, and other Visual Studio solutions you'll need at least one Windows agent. Windows agents can also build Java and Android apps.
 
 **Please Note**: This is an automatically updated package. If you find it is 

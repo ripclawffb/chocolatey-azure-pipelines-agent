@@ -9,7 +9,7 @@
     <title>Azure Pipelines Agent (Install)</title>
     <authors>Microsoft</authors>
     <projectUrl>https://github.com/microsoft/azure-pipelines-agent</projectUrl>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/azure-pipelines-agent.png</iconUrl>-->
+    <iconUrl>https://cdn.jsdelivr.net/gh/ripclawffb/chocolatey-azure-pipelines-agent@master/azure-pipelines.png</iconUrl>
     <copyright>2020 Microsoft</copyright>
     <licenseUrl>https://github.com/microsoft/azure-pipelines-agent/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
