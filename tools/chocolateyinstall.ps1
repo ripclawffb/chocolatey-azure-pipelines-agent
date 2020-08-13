@@ -128,4 +128,6 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
-Start-Process -NoNewWindow -FilePath "$installDir\config.cmd" -ArgumentList "--unattended --acceptTeeEula $additionalArgs"
+if($packageParameters.keys.count -gt 0) {
+  Start-Process -NoNewWindow -FilePath "$installDir\config.cmd" -ArgumentList "--unattended --acceptTeeEula $additionalArgs"
+}
