@@ -69,7 +69,6 @@ If you chose --auth negotiate or --auth alt:
 * windowsLogonAccount <account> - used with --runAsService or --runAsAutoLogon to specify the Windows user name in the format domain\userName or userName@domain.com
 * windowsLogonPassword <password> - used with --runAsService or --runAsAutoLogon to specify Windows logon password
 * overwriteAutoLogon - used with --runAsAutoLogon to overwrite the existing auto logon on the machine
-* noRestart - used with --runAsAutoLogon to stop the host from restarting after agent configuration completes
 
 #### Deployment group only
 

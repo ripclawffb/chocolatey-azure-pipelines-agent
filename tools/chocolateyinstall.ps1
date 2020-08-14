@@ -25,7 +25,6 @@ if ($packageParameters['runAsService']) { $runAsService = $true }
 if ($packageParameters['runAsAutoLogon']) { $runAsAutoLogon = $true }
 if ($packageParameters['windowsLogonAccount']) { $windowsLogonAccount = $packageParameters['windowsLogonAccount'] }
 if ($packageParameters['windowsLogonPassword']) { $windowsLogonPassword = $packageParameters['windowsLogonPassword'] }
-if ($packageParameters['noRestart']) { $noRestart  = $packageParameters['noRestart'] }
 
 if ($packageParameters['deploymentGroup']) { $deploymentGroup = $true }
 if ($packageParameters['deploymentGroupName']) { $deploymentGroupName = $packageParameters['deploymentGroupName'] }
@@ -83,14 +82,10 @@ if(Get-Variable -Name runAsService -ErrorAction SilentlyContinue) {
 }
 
 if(Get-Variable -Name runAsAutoLogon -ErrorAction SilentlyContinue) {
-  $additionalArgs += " --runAsAutoLogon --windowsLogonAccount $windowsLogonAccount --windowsLogonPassword $windowsLogonPassword"
+  $additionalArgs += " --runAsAutoLogon  --noRestart --windowsLogonAccount $windowsLogonAccount --windowsLogonPassword $windowsLogonPassword"
 
   if(Get-Variable -Name overwriteAutoLogon -ErrorAction SilentlyContinue) {
     $additionalArgs += " --overwriteAutoLogon"
-  }
-
-  if(Get-Variable -Name noRestart -ErrorAction SilentlyContinue) {
-    $additionalArgs += " --noRestart"
   }
 }
 
